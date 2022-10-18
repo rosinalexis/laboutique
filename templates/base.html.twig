@@ -14,6 +14,7 @@
         {% endblock %}
     </head>
     <body>
+    {% include('layout/partials/_flash_messages.html.twig') %}
     {% include 'layout/navigations/_header.html.twig' %}
     <main>
         {% if block('carousel') is defined %}
